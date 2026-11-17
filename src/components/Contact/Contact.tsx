@@ -35,7 +35,6 @@ const Contact = () => {
             <StyledPerson key={datum.name}>
               <StyledPersonName>{datum.name}</StyledPersonName>
               <StyledPersonInfo>{t(`Titles.${datum.title}`)}</StyledPersonInfo>
-              <StyledPersonInfo as="a" href={`mailto:${datum.email}`}>{datum.email}</StyledPersonInfo>
               <StyledPersonInfo>{datum.phone}</StyledPersonInfo>
             </StyledPerson>
           ))}
